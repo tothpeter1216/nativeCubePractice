@@ -6,7 +6,6 @@ import CubeList from '../pages/cubeList.page'
 import CubeDetails from '../pages/cubeDetails.page'
 import CubeDetailsTabs from './cubeDetailTabs'
 
-
 const Stack = createNativeStackNavigator()
 
 const cubesNavigation = () => {

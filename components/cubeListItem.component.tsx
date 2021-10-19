@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Text, Image, StyleSheet, Pressable } from "react-native"
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native"
 
 export interface cube {
     id: string
@@ -11,7 +11,7 @@ export interface cube {
 
 const CubeListItem = (props: any) => {
     return (
-        <Pressable onPress={() => props.onPress(props.cube)}>
+        <TouchableOpacity onPress={() => props.onPress(props.cube)}>
             <View style={styles.container}>
                 <View style={styles.upperBlock}>
                     <Image
@@ -36,7 +36,7 @@ const CubeListItem = (props: any) => {
                     </View>
                 </View>
             </View>
-        </Pressable>
+        </TouchableOpacity>
     )
 }
 
